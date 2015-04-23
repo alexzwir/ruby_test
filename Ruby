@@ -1,0 +1,86 @@
+Ruby
+
+Métodos:
+	Açoes
+		puts (printa alguma coisa)
+		gets (pega o que foi digitado)
+		chomps (para tirar o espaço da linha)
+		to_i, to_f, to_s
+		aritiméticos (+,-,/,*, ** --> exponenciacao , %)
+			** = exponenciacao
+			** de números floats = raiz quadrada.
+				eg: 5**0.5
+		abs: pega o valor absoluto 
+			eg: puts ((5-2).abs) = 	puts ((5-2).abs)	
+		upcase, downcase, swapcase, capitalize
+		.center, ljust, rjust (lembrar do truque de dividir por dois)
+		rand: esse método te permite gerar números aleatorios, se voce definir algo entre parenteses, estara definindo o número máximo.
+			Para conseguir numeros randomicos de 0 a 100, colocar rand(101).
+			srand --> a mesma sequencia de numeros aleatorios
+		math
+			Tudo que uma calculadora cientifica tem
+			operador de escopo(::)	
+			(Math.cos(Math::PI/3))
+				Math.con
+				Math.tan
+				Math.log
+		Metodos comparativos
+			< e >
+			>= e <=
+			== e !=
+			Quando se compara strings (> ou <), querendo saber sua ordem lexiográfica, ou seja qual vem antes no dicionario, ordem alfabética.
+				Cuidado que o computador ordena as letras maiusculas antes das minusculas
+Objetos
+	Sujeitos
+	String, float, integer, booleanos (true e false)
+
+Controle de Fluxo
+
+	Ramificações (Branching)
+		if nome == "Alex"
+			puts "que nome Bonito"
+		end
+
+		if nome == "Alex"
+			puts "que nome Bonito"
+		else
+	Repetição (looping)
+		while var1 != "Minha senha é XXXXX"
+			puts "Caramba que senha foda"
+		end
+
+Operadores lógicos
+	and
+	or
+	not = altera o valor do boolean
+
+Ruby Interativo
+	Abra o terminal e digite "irb"
+		Digite: puts "Ola Mundo"
+		retorno nil --> o retorno de puts é sempre nil.
+
+
+Módulo Math é um módulo nativo para funções matemáticas 
+	Os módulos têm dois papeis em Ruby. 
+	Este é um desses papeis: agrupar métodos semelhantes em conjunto sobre um nome familiar. 
+	Math também contém métodos como sin() e tan().
+	
+	Square Root -- Raiz quadrada - Método do módulo math
+		eg:
+		math.sqrt(9)
+
+Classes = Objetos
+	Array(vetores), string, inteiro, float, objetos especiais (true, false, nil)
+	Todas as classes em ruby comecam com letra maiuscula.
+		String
+		Integer
+		Float
+		Array
+		Time
+			A classe time pode ser criada no IRB, da seguinte maneira
+				Time.new --> irá criar a data do horario especifico daquela data
+			É possivel criar um horário específico usando o método mktime
+				Eg:
+					puts Time.mktime(2000,1,1)
+					puts Time.mktime(1986,7,6)
+	
