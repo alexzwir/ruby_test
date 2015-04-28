@@ -83,4 +83,30 @@ Classes = Objetos
 				Eg:
 					puts Time.mktime(2000,1,1)
 					puts Time.mktime(1986,7,6)
-	
+	Classe Hash
+		nomeDaFamilia = Hash.new --> Esse metodo serve para criar um novo hash
+
+
+	EXIT terminates the program right then and there
+
+	PRIVATE METHODS - Esses metodos (pesquisar)
+
+Capitulo 9 - Blocks and Procs / Blocos e Procs
+(em outras linguagens, eles chamam de Closures)
+
+	A palavra Procs vem de "Procedimentos"
+
+	O que é o Proc?
+	É a habilidade de pegar um bloco de código(código entre do e End), amarrar tudo em um objeto (=chamda de proc), armazenar isso em uma variavel e passar isso com um método
+		e.g: saudacao = Proc.new do
+				puts 'olá!'
+			 end
+
+			 saudacao.call
+
+			 >olá!
+	ATENÇÃO PARA  A PALAVRA CALL (.call), que fez como se fosse um método.
+
+
+
+
